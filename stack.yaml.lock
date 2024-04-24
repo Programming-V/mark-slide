@@ -3,7 +3,14 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/lock_files
 
-packages: []
+packages:
+- completed:
+    hackage: uulib-0.9.24@sha256:152da205e22befdeeb65e734990142d578456efb6e14e46bfd22e4cb63cd374d,1801
+    pantry-tree:
+      sha256: 65e2c597dd20e0a985f42a5cbc526a39122aebb347b7c399e414f560b18579be
+      size: 2343
+  original:
+    hackage: uulib-0.9.24
 snapshots:
 - completed:
     sha256: 9bebedd3de0195aa01fd55de7f6d4446667440297a7315e69cd72c2610af265f
