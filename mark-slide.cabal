@@ -25,7 +25,14 @@ source-repository head
 
 library
   exposed-modules:
+      AbstractGrammar
+      Interpreter
       Lib
+      Parser
+      ScannedToken
+      Scanner
+      Token
+      Utils
   other-modules:
       Paths_mark_slide
   autogen-modules:
