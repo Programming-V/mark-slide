@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Slides</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .swiper-container {
+      width: 90%;
+      height: 90%;
+      background-color: transparent;
+      position: relative;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      overflow: hidden;
+      background-color: #FFD700;
+    }
+
+    .swiper-slide:nth-child(odd) {
+      background-color: #87CEEB;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      text-align: center;
+      line-height: 30px;
+      cursor: pointer;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+      opacity: 1;
+    }
+
+    .swiper-button-next {
+      right: 10px;
+    }
+
+    .swiper-button-prev {
+      left: 10px;
+    }
+
+    .swiper-pagination {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="border: 0px solid #555; background-color: #F5B7B1;">
+        <h1>Slide 1</h1>
+        <p class="content"><em>asterisks1</em></p>
+        <p class="content"><strong>bold</strong></p>
+        <p class="content"><s>subtext</s></p>
+      </div>
+      <div class="swiper-slide" style="border: 0px solid #555; background-color: #AED6F1;">
+        <h1>Slide 2</h1>
+        <h2 class="title">Hola 2 </h2>
+        <h3 class="title">Hola 3 </h3>
+        <h4 class="title">Hola 4 </h4>
+        <h5 class="title">Hola 5 </h5>
+        <h6 class="title">Hola 6 </h6>
+      </div>
+    </div>
+    <div class="swiper-button-prev">‹</div>
+    <div class="swiper-button-next">›</div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+      },
+    });
+  </script>
+</body>
+
+</html>
