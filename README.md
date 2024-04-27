@@ -1,1 +1,5 @@
-# mark-slide
+# MarkSlide
+
+## Team:
+
+- José Luis Terán
